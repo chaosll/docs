@@ -3,7 +3,7 @@
 layout: home
 
 hero:
-  name: "chaos-docs"
+  name: "chaos"
   text: "文档"
   tagline: My great project tagline
   actions:

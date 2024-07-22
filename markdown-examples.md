@@ -1,85 +1,27 @@
-# Markdown Extension Examples
+---
+hello: world
+---
 
-This page demonstrates some of the built-in markdown extensions provided by VitePress.
+<script setup>
+import { ref } from 'vue'
 
-## Syntax Highlighting
+const count = ref(0)
+</script>
 
-VitePress provides Syntax Highlighting powered by [Shiki](https://github.com/shikijs/shiki), with additional features like line-highlighting:
+## Markdown Content
 
-**Input**
+The count is: {{ count }}
 
-````md
-```js{4}
-export default {
-  data () {
-    return {
-      msg: 'Highlighted!'
-    }
-  }
+<button :class="$style.button" @click="count++">Increment</button>
+<img src="./png/img_5.jpg"></img>
+
+<style module>
+.button {
+  padding: .1rem 0;
+  border: 2px solid;
+  font-weight: bold;
 }
-```
-````
-
-**Output**
-
-```js{4}
-export default {
-  data () {
-    return {
-      msg: 'Highlighted!'
-    }
-  }
+img {
+  margin-top: 1rem;
 }
-```
-
-## Custom Containers
-
-**Input**
-
-```md
-::: info
-This is an info box.
-:::
-
-::: tip
-This is a tip.
-:::
-
-::: warning
-This is a warning.
-:::
-
-::: danger
-This is a dangerous warning.
-:::
-
-::: details
-This is a details block.
-:::
-```
-
-**Output**
-
-::: info
-This is an info box.
-:::
-
-::: tip
-This is a tip.
-:::
-
-::: warning
-This is a warning.
-:::
-
-::: danger
-This is a dangerous warning.
-:::
-
-::: details
-This is a details block.
-:::
-
-## More
-
-Check out the documentation for the [full list of markdown extensions](https://vitepress.dev/guide/markdown).
+</style>

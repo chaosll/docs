@@ -3,7 +3,6 @@ layout: home
 
 hero:
   name: '念奴娇'
-  # text: '启示录'
   actions:
     - theme: brand
       text: MD
@@ -14,32 +13,37 @@ hero:
 ---
 <img src="./png/img_1.jpg" alt="图片1" style="width: 100%; height: auto;"/></img>
 
-<div class="home foot-bottom">
-  <p class="copyright">
-    <a href="https://beian.miit.gov.cn/" target="_blank">桂ICP备2024037092号-1</a>
-    <span class="_bold"> | </span>
-    <a href="http://www.beian.gov.cn" target="_blank"></a>
-    <span>运行在腾讯云服务器上</span>
-  </p>
+<div class="foot-bottom">
+    <a href="https://beian.miit.gov.cn/" target="_blank">桂ICP备2024037092号</a>
+    <a href="https://beian.mps.gov.cn/#/query/webSearch?code=45088102000270" rel="noreferrer" target="_blank">
+    <img src="./png/beian.png" alt="备案图标"/></img>
+      <span>桂公网安备45088102000270</span>
+    </a>
 </div>
 
 <style lang='scss'>
-.home.foot-bottom {
-  text-align: center;
+.foot-bottom {
   color: #999;
   font-family: Arial, sans-serif;
-  font-size: 12px;
-  padding: 10px;
-  position: fixed;
-  bottom: 20px;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img {
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.5rem;
+  }
   a {
     color: #999;
     text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
     &:hover {
-      color: #666;}
-  }
-  ._bold {
-    padding:0 5px;
+        color: #666;
+      }
   }
 }
 </style>

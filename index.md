@@ -11,7 +11,7 @@ hero:
       text: 笔记
       link: /笔记
 ---
-<img src="./png/img_1.jpg" alt="图片1" style="width: 100%; height: auto;"/></img>
+<img src="./png/img_3.png" alt="图片3" style="width: 100%; height: auto;"/></img>
 
 <div class="foot-bottom">
     <a href="https://beian.miit.gov.cn/" target="_blank">桂ICP备2024037092号</a>
